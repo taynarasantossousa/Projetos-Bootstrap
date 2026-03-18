@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <title>Blog Tech & Help Center</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">
+      TechBlog
+    </a>
+
+    <button
+      class="navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notícias</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ajuda</a>
+        </li>
+
+      </ul>
+
+      <button
+        class="btn btn-success me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#newsletter"
+      >
+        Newsletter
+      </button>
+
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#login"
+      >
+        Login
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-3">
+
+  <div class="alert alert-info">
+    Novo post disponível!
+  </div>
+
+</div>
+
+<div class="container mt-4">
+
+  <h2>Últimas Notícias</h2>
+
+  <div class="row">
+
+    <div class="col-md-4">
+
+      <div class="card">
+
+        <div class="card-body">
+
+          <span class="badge bg-primary">
+            Tecnologia
+          </span>
+
+          <h5 class="card-title mt-2">
+            Novo celular lançado
+          </h5>
+
+          <p>
+            Veja as novidades do novo smartphone.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-4">
+
+      <div class="card">
+
+        <div class="card-body">
+
+          <span class="badge bg-success">
+            Programação
+          </span>
+
+          <h5 class="card-title mt-2">
+            React em 2026
+          </h5>
+
+          <p>
+            O que mudou no React.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-4">
+
+      <div class="card">
+
+        <div class="card-body">
+
+          <span class="badge bg-warning">
+            Dicas
+          </span>
+
+          <h5 class="card-title mt-2">
+            Aprender mais rápido
+          </h5>
+
+          <p>
+            Como estudar programação.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="container mt-4">
+
+  <nav>
+
+    <ul class="pagination">
+
+      <li class="page-item">
+        <a class="page-link">1</a>
+      </li>
+
+      <li class="page-item">
+        <a class="page-link">2</a>
+      </li>
+
+      <li class="page-item">
+        <a class="page-link">3</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</div>
+
+
+<div class="container mt-5">
+
+  <h2>Perguntas Frequentes</h2>
+
+  <div class="accordion" id="faq">
+
+    <div class="accordion-item">
+
+      <h2 class="accordion-header">
+
+        <button
+          class="accordion-button"
+          data-bs-toggle="collapse"
+          data-bs-target="#p1"
+        >
+          Como criar conta?
+        </button>
+
+      </h2>
+
+      <div
+        id="p1"
+        class="accordion-collapse collapse show"
+        data-bs-parent="#faq"
+      >
+
+        <div class="accordion-body">
+          Clique em login e crie sua conta.
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="accordion-item">
+
+      <h2 class="accordion-header">
+
+        <button
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#p2"
+        >
+          Como assinar newsletter?
+        </button>
+
+      </h2>
+
+      <div
+        id="p2"
+        class="accordion-collapse collapse"
+        data-bs-parent="#faq"
+      >
+
+        <div class="accordion-body">
+          Clique no botão newsletter.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div
+  class="modal fade"
+  id="newsletter"
+>
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5>Newsletter</h5>
+
+        <button
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email"
+        >
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button
+          class="btn btn-success"
+          data-bs-dismiss="modal"
+        >
+          Assinar
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div
+  class="modal fade"
+  id="login"
+>
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5>Login</h5>
+
+        <button
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <input
+          class="form-control mb-2"
+          placeholder="Email"
+        >
+
+        <input
+          class="form-control"
+          placeholder="Senha"
+        >
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button
+          class="btn btn-primary"
+          data-bs-dismiss="modal"
+        >
+          Entrar
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>

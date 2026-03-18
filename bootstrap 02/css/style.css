@@ -1,0 +1,23 @@
+body{
+background:#f5f6fa;
+}
+
+.sidebar{
+width:220px;
+min-height:100vh;
+background:#212529;
+}
+
+.sidebar .nav-link{
+margin-bottom:10px;
+}
+
+.sidebar .nav-link:hover{
+background:#343a40;
+border-radius:5px;
+}
+
+.content{
+background:#f8f9fa;
+min-height:100vh;
+}
